@@ -1,0 +1,95 @@
+.carousel-inner {
+  height: 500px !important;
+}
+
+.carousel-inner img {
+  height: 500px;
+}
+
+.carousel-caption {
+  width: 100%;
+  right: 0 !important;
+  left: 0 !important;
+  bottom: 3rem;
+}
+
+.carousel-caption button {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 50px !important;
+  padding: 10px 25px;
+}
+
+.carousel-caption button:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.timer__count button {
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color);
+  border-radius: 50px !important;
+  padding: 10px 25px;
+}
+
+.timer__count button a {
+  font-weight: 700 !important;
+}
+
+.timer__count button:hover {
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.timer__count button a:hover {
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.btn-primary a {
+  font-weight: 600;
+}
+
+.carousel-caption .btn-primary a:hover {
+  color: #fff;
+}
+
+.timer__count {
+  background: var(--primary-color);
+  height: 300px;
+  padding-top: 45px;
+}
+
+.timer__count img {
+  width: 70% !important;
+  height: 70% !important;
+  object-fit: contain;
+}
+
+.store__btn {
+  margin-top: 40px;
+}
+
+.store__btn a:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 992px) {
+  .counter__img {
+    display: none;
+  }
+
+  .clock__top-content {
+    text-align: center;
+  }
+
+  .count__down-col {
+    text-align: center;
+  }
+}
