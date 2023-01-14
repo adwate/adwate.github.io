@@ -1,0 +1,101 @@
+.table tr td img {
+  width: 80px !important;
+  height: 80px !important;
+  object-fit: cover;
+}
+
+td i {
+  cursor: pointer;
+}
+
+td,
+th {
+  color: var(--primary-color);
+}
+
+td {
+  vertical-align: middle;
+}
+
+.checkout__btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.empty-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty-cart {
+  margin-bottom: 50px;
+}
+
+.empty-section button {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  border-radius: 50px !important;
+  padding: 10px 25px;
+}
+
+.empty-section button:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.empty-section button a:hover {
+  color: white !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.checkout__btns .move-to-checkout {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  font-weight: 600 !important;
+}
+
+.checkout__btns .move-to-checkout:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+  scale: 1.1;
+}
+
+.checkout__btns .move-to-checkout a:hover {
+  color: white;
+}
+
+.back-to-shop {
+  margin-top: 0px !important;
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border: none;
+}
+
+.back-to-shop a:hover {
+  background-color: white !important;
+  color: var(--primary-color) !important;
+  border: none;
+}
+
+.qty-btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .empty-cart {
+    margin-left: 0px;
+  }
+}
