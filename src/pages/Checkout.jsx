@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { cartActions } from "../redux/slices/cartSlice";
+import { useDispatch } from "react-redux";
 
 import "../styles/checkout.css";
 import { Container, Row, Col, Form, FormGroup } from "reactstrap";
@@ -15,6 +17,7 @@ const Checkout = () => {
   const totalAmount = useSelector((state) => state.cart.totalAmount);
 
   const navigate = useNavigate();
+  const dispatch = useDispatch();
 
   const cartItems = useSelector((state) => state.cart.cartItems);
 
@@ -132,6 +135,7 @@ const Checkout = () => {
               cartItems: [],
               totalAmount: 0,
             });
+            dispatch(cartActions.clearCart());
             alert("تم إرسال الطلب بنجاح، سيتم التواصل معك قريبا. شكراً لك");
             navigate("/home");
           },

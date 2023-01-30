@@ -52,7 +52,7 @@ const Home = () => {
     <Helmet title={"الرئيسية"}>
       <section className="hero__section">
         <Carousel variant="dark">
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={7000}>
             <img className="d-block w-100" src={superr} alt="Second slide" />
             <Carousel.Caption>
               <Button variant="primary" size="lg">
@@ -60,7 +60,7 @@ const Home = () => {
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={7000}>
             <img
               className="d-block w-100"
               src={fixmanPower}
@@ -72,7 +72,7 @@ const Home = () => {
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={7000}>
             <img
               className="d-block w-100"
               src={pressureWasher}
@@ -84,7 +84,7 @@ const Home = () => {
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={7000}>
             <img className="d-block w-100" src={powerTool} alt="Third slide" />
             <Carousel.Caption>
               <Button variant="primary" size="lg">
@@ -92,7 +92,7 @@ const Home = () => {
               </Button>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={7000}>
             <img
               className="d-block w-100"
               src={superClean2}

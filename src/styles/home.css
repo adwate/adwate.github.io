@@ -93,3 +93,13 @@
     text-align: center;
   }
 }
+
+@media only screen and (max-width: 425px) {
+  .carousel-inner {
+    height: 300px !important;
+  }
+
+  .carousel-inner img {
+    height: 300px;
+  }
+}
