@@ -15,7 +15,6 @@ import { useSelector, useDispatch } from "react-redux";
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const totalAmount = useSelector((state) => state.cart.totalAmount);
-  console.log("cartItems in cart", cartItems);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -34,6 +34,8 @@ const Checkout = () => {
     details[`item${index + 1}`] = item.productName;
     details[`desc${index + 1}`] = item.productDesc;
     details[`quantity${index + 1}`] = item.quantity;
+    details[`price${index + 1}`] = item.price;
+    details[`totalPrice${index + 1}`] = item.totalPrice;
     details[`img${index + 1}`] = item.imgUrl;
   });
 
@@ -52,20 +54,12 @@ const Checkout = () => {
     if (details.name === "") {
       formIsValid = false;
       customErrors.name = "عذراً، أدخل إسمك";
-    } else if (typeof details.name !== "undefined") {
-      if (!details["name"].match(/^[a-zA-Z]+$/)) {
-        formIsValid = false;
-        customErrors["name"] = "عذراً، لا يمكنك إدخال أرقام";
-      }
     }
 
     //Phone
     if (details.phone === "") {
       formIsValid = false;
       customErrors["phone"] = "عذراً، أدخل رقم الجوال";
-    } else if (!details.phone.match(/^\d+$/)) {
-      formIsValid = false;
-      customErrors["phone"] = "عذراً، أدخل أرقام فقط";
     } else if (details.phone.length < 7) {
       formIsValid = false;
       customErrors["phone"] = "عذراً، أدخل رقم صحيح";
@@ -76,31 +70,16 @@ const Checkout = () => {
     if (details.city === "") {
       formIsValid = false;
       customErrors.city = "عذراً، أدخل إسم المدينة";
-    } else if (typeof details.city !== "undefined") {
-      if (!details["city"].match(/^[a-zA-Z]+$/)) {
-        formIsValid = false;
-        customErrors["city"] = "عذراً، لا يمكنك إدخال أرقام";
-      }
     }
 
     if (details.street === "") {
       formIsValid = false;
       customErrors.street = "عذراً، أدخل إسم الحي أو الشارع";
-    } else if (typeof details.street !== "undefined") {
-      if (!details["street"].match(/^[a-zA-Z]+$/)) {
-        formIsValid = false;
-        customErrors["street"] = "عذراً، لا يمكنك إدخال أرقام";
-      }
     }
 
     if (details.beside === "") {
       formIsValid = false;
       customErrors.beside = "عذراً، أدخل مكان التوصيل بالقرب من ماذا؟";
-    } else if (typeof details.beside !== "undefined") {
-      if (!details["beside"].match(/^[a-zA-Z]+$/)) {
-        formIsValid = false;
-        customErrors["beside"] = "عذراً، لا يمكنك إدخال أرقام";
-      }
     }
 
     //Email
@@ -135,35 +114,34 @@ const Checkout = () => {
     e.preventDefault();
     let validated = handleValidation();
     if (validated) {
-      console.log("details", details);
-      alert("Sucessfully!!!");
+      emailjs
+        .send(
+          process.env.REACT_APP_EMAILJS_SERVICE_ID,
+          process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+          details,
+          process.env.REACT_APP_EMAILJS_USER_ID
+        )
+        .then(
+          (result) => {
+            setDetails({
+              name: "",
+              email: "",
+              phone: "",
+              street: "",
+              city: "",
+              cartItems: [],
+              totalAmount: 0,
+            });
+            alert("تم إرسال الطلب بنجاح، سيتم التواصل معك قريبا. شكراً لك");
+            navigate("/home");
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
     } else {
       console.log("errors", errors);
-      console.log("not validated");
     }
-
-    // emailjs
-    //   .send(REACT_APP_EMAILJS_SERVICE_ID, REACT_APP_EMAILJS_TEMPLATE_ID, details, REACT_APP_EMAILJS_USER_ID)
-    //   .then(
-    //     (result) => {
-    //       console.log(details);
-    //       setDetails({
-    //         name: "",
-    //         email: "",
-    //         phone: "",
-    //         street: "",
-    //         city: "",
-    //         cartItems: [],
-    //         totalAmount: 0,
-    //       });
-    //       console.log(result.text);
-    //       alert("Sucessfully!!!");
-    //       navigate("/home");
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    //     }
-    //   );
   };
 
   return (
