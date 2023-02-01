@@ -63,6 +63,10 @@
     font-size: 15px;
   }
 
+  .product__card-bottom .disabled i {
+    font-size: 15px;
+  }
+
   .product__card-bottom .price {
     font-size: 20px;
   }
@@ -79,6 +83,10 @@
     background: var(--primary-color);
     color: #fff;
     border-radius: 50px;
+  }
+
+  .product__card-bottom .disabled i {
+    font-size: 14px;
   }
 
   .product__card-bottom span i::before {
@@ -106,6 +114,10 @@
     background: var(--primary-color);
     color: #fff;
     border-radius: 50px;
+  }
+
+  .product__card-bottom .disabled i {
+    font-size: 1.2rem;
   }
 
   .product__card-bottom span i::before {
