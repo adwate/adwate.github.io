@@ -6,6 +6,7 @@ import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   const year = new Date().getFullYear();
+
   return (
     <footer className="footer">
       <Container>
