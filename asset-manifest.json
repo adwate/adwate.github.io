@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4f56b6fa.css",
-    "main.js": "/static/js/main.303f0808.js",
+    "main.css": "/static/css/main.64a33866.css",
+    "main.js": "/static/js/main.e76fd8e8.js",
     "static/media/power-tool1.jpg": "/static/media/power-tool1.ee90490d323f449147c8.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/mfate7set1.png": "/static/media/mfate7set1.24f08bf6ae3f446179ed.png",
@@ -119,11 +119,11 @@
     "static/media/floor-machine-4.jpg": "/static/media/floor-machine-4.d2dc144e4a1dde7c20db.jpg",
     "static/media/custommfk.png": "/static/media/custommfk.9b1c243235e5f36a65ac.png",
     "index.html": "/index.html",
-    "main.4f56b6fa.css.map": "/static/css/main.4f56b6fa.css.map",
-    "main.303f0808.js.map": "/static/js/main.303f0808.js.map"
+    "main.64a33866.css.map": "/static/css/main.64a33866.css.map",
+    "main.e76fd8e8.js.map": "/static/js/main.e76fd8e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f56b6fa.css",
-    "static/js/main.303f0808.js"
+    "static/css/main.64a33866.css",
+    "static/js/main.e76fd8e8.js"
   ]
 }
