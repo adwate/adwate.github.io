@@ -42,7 +42,7 @@ const Cart = () => {
                       <th>الصورة</th>
                       <th>الإسم</th>
                       <th>السعر</th>
-                      <th className="px-5">الكمية</th>
+                      <th className="px-3">الكمية</th>
                       <th>حذف</th>
                     </tr>
                   </thead>
@@ -127,14 +127,14 @@ const Tr = ({ item }) => {
       <td>₪{item.price}</td>
       <td>
         {item.quantity > 1 ? (
-          <span className="mx-3 qty-btn" onClick={decreaseQty}>
+          <span className="qty-btn right" onClick={decreaseQty}>
             -
           </span>
         ) : (
-          <span style={{ marginLeft: 53 }}></span>
+          <span className="hidden-minus-sign"></span>
         )}
         {item.quantity}
-        <span className="mx-3 qty-btn" onClick={increaseQty}>
+        <span className="qty-btn left" onClick={increaseQty}>
           +
         </span>
       </td>

@@ -11,6 +11,7 @@ td i {
 td,
 th {
   color: var(--primary-color);
+  text-align: center;
 }
 
 td {
@@ -94,8 +95,41 @@ td {
   text-align: center;
 }
 
+.hidden-minus-sign {
+  margin-left: 29px;
+}
+
+.left {
+  margin-left: 7px;
+}
+
+.right {
+  margin-right: 7px;
+}
+
 @media only screen and (max-width: 768px) {
   .empty-cart {
     margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  td,
+  th {
+    font-size: 12px;
+  }
+
+  .table tr td img {
+    width: 47px !important;
+    object-fit: contain;
+  }
+
+  .qty-btn {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hidden-minus-sign {
+    margin-left: 21px;
   }
 }
