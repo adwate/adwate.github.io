@@ -133,3 +133,17 @@ td {
     margin-left: 21px;
   }
 }
+
+@media only screen and (max-width: 320px) {
+  .hidden-minus-sign {
+    margin-left: 17px;
+  }
+
+  .left {
+    margin-left: 3px;
+  }
+
+  .right {
+    margin-right: 3px;
+  }
+}
