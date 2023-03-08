@@ -26,7 +26,7 @@ const Checkout = () => {
     email: "",
     phone: "",
     street: "",
-    city: "",
+    city: " ",
     beside: "",
     totalAmount: totalAmount,
   });
