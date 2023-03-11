@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.64a33866.css",
-    "main.js": "/static/js/main.69d43cc3.js",
+    "main.css": "/static/css/main.ffdd81ee.css",
+    "main.js": "/static/js/main.56499186.js",
     "static/media/power-tool1.jpg": "/static/media/power-tool1.ee90490d323f449147c8.jpg",
     "static/media/remixicon.svg?t=1590207869815": "/static/media/remixicon.9cedd2150922ead84869.svg",
     "static/media/mfate7set1.png": "/static/media/mfate7set1.24f08bf6ae3f446179ed.png",
@@ -41,6 +41,7 @@
     "static/media/remixicon.eot?t=1590207869815": "/static/media/remixicon.5cb99e6cba5a4619063f.eot",
     "static/media/remixicon.ttf?t=1590207869815": "/static/media/remixicon.f2616f597cf98f38d234.ttf",
     "static/media/sprayer3.png": "/static/media/sprayer3.01dab5db4e40d5c4173c.png",
+    "static/media/150bar.png": "/static/media/150bar.0c5662270248e4987d4a.png",
     "static/media/mfkat1.png": "/static/media/mfkat1.9f307a0c262c164cef8f.png",
     "static/media/boxset.png": "/static/media/boxset.b882e9c6f75754463a9a.png",
     "static/media/maknt7af2.png": "/static/media/maknt7af2.459446cc6ceb30f208e0.png",
@@ -76,6 +77,7 @@
     "static/media/carpetcleaner60.png": "/static/media/carpetcleaner60.ee96a970a8814d6b7b79.png",
     "static/media/pressor.png": "/static/media/pressor.067d42e892d0b910f42e.png",
     "static/media/wrench9.png": "/static/media/wrench9.4c3e7e38a1437aa23914.png",
+    "static/media/90bar.png": "/static/media/90bar.f68f6f21a6d7fd3e982e.png",
     "static/media/wrench1.png": "/static/media/wrench1.aa5748df87792fe89471.png",
     "static/media/sprayer4.png": "/static/media/sprayer4.3a1b7e6790fcb51babcb.png",
     "static/media/jacknosTon.png": "/static/media/jacknosTon.b1caefce153a13657265.png",
@@ -119,11 +121,11 @@
     "static/media/floor-machine-4.jpg": "/static/media/floor-machine-4.d2dc144e4a1dde7c20db.jpg",
     "static/media/custommfk.png": "/static/media/custommfk.9b1c243235e5f36a65ac.png",
     "index.html": "/index.html",
-    "main.64a33866.css.map": "/static/css/main.64a33866.css.map",
-    "main.69d43cc3.js.map": "/static/js/main.69d43cc3.js.map"
+    "main.ffdd81ee.css.map": "/static/css/main.ffdd81ee.css.map",
+    "main.56499186.js.map": "/static/js/main.56499186.js.map"
   },
   "entrypoints": [
-    "static/css/main.64a33866.css",
-    "static/js/main.69d43cc3.js"
+    "static/css/main.ffdd81ee.css",
+    "static/js/main.56499186.js"
   ]
 }
