@@ -113,7 +113,7 @@ td {
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 612px) {
   td,
   th {
     font-size: 12px;
@@ -129,12 +129,10 @@ td {
     height: 14px;
   }
 
-  .hidden-minus-sign {
+  /* .hidden-minus-sign {
     margin-left: 21px;
-  }
-}
+  } */
 
-@media only screen and (max-width: 320px) {
   .hidden-minus-sign {
     margin-left: 17px;
   }
@@ -147,3 +145,17 @@ td {
     margin-right: 3px;
   }
 }
+
+/* @media only screen and (max-width: 320px) {
+  .hidden-minus-sign {
+    margin-left: 17px;
+  }
+
+  .left {
+    margin-left: 3px;
+  }
+
+  .right {
+    margin-right: 3px;
+  }
+} */
