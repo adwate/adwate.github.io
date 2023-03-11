@@ -85,7 +85,6 @@ const Header = () => {
           <div className="nav__wrapper">
             <div className="logo">
               <NavLink to="home">
-                <img src={logo2} alt="logo" />
                 <h1>أدواتـــي</h1>
               </NavLink>
             </div>

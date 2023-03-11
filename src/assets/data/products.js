@@ -111,6 +111,9 @@ import vacuumcleaner from "../images/AdwateProducts/vacuumcleaner.png";
 import superclean from "../images/AdwateProducts/superclean.png";
 import polishtee from "../images/AdwateProducts/polishtee.png";
 
+import a90bar from "../images/AdwateProducts/90bar.png";
+import a150bar from "../images/AdwateProducts/150bar.png";
+
 const products = [
   {
     id: "01",
@@ -156,7 +159,7 @@ const products = [
     productName: "طرمبة غاطس 1 انش",
     imgUrl: ghates2inch,
     category: "طرمبة",
-    price: 600,
+    price: 650,
     shortDesc:
       "طرمبة ماء غاطس 1 انش  تعمل على ارتفاع لغاية 30م عمودي, ذات جودة صناعية عالية",
     reviews: [
@@ -172,7 +175,8 @@ const products = [
     productName: "طرمبة غاطس 2 انش",
     imgUrl: ghates4inch,
     category: "طرمبة",
-    price: 600,
+    price: 650,
+    oldPrice: 750,
     shortDesc:
       "طرمبة ماء غاطس 2 انش تعمل على ارتفاع لغاية11م عمودي, مع فرامة تستخدم للماء الملوثة, ذات جودة صناعية عالية",
     reviews: [
@@ -204,8 +208,8 @@ const products = [
     productName: "فرد تنفيخ حديد ",
     imgUrl: air3hand,
     category: "فرد تنفيخ",
-    price: 15,
-    oldPrice: 25,
+    price: 20,
+    oldPrice: 35,
     shortDesc: "فرد تنفيخ ذات جودة صناعية عالية",
     reviews: [
       {
@@ -283,7 +287,7 @@ const products = [
     productName: "طرطيقة هواء 1/2 انش",
     imgUrl: torte2a,
     category: "طرطيقة",
-    price: 150,
+    price: 220,
     shortDesc: "طرطيقة هواء 1/2 انش ذات جودة صناعية عالية",
     reviews: [
       {
@@ -298,8 +302,8 @@ const products = [
     productName: "طرطيقة هواء 3/8 انش",
     imgUrl: torte2a,
     category: "طرطيقة",
-    price: 150,
-    oldPrice: 180,
+    price: 220,
+    oldPrice: 280,
     shortDesc: "طرطيقة هواء 3/8 انش ذات جودة صناعية عالية",
     reviews: [
       {
@@ -405,8 +409,8 @@ const products = [
     productName: "فرد بكسات 1/2 انش",
     imgUrl: wrench8,
     category: "فرد بكسات",
-    price: 280,
-    oldPrice: 350,
+    price: 300,
+    oldPrice: 370,
     shortDesc: "فرد بكسات 1/2 انش، ذات جودة صناعية 7500ر.ب.م 640ن.م",
     reviews: [
       {
@@ -497,7 +501,7 @@ const products = [
     productName: "فرد بوية مقلوب ",
     imgUrl: sprayer2,
     category: "بوية/دهان",
-    price: 50,
+    price: 60,
     shortDesc: "فرد بوية مقلوب ذات جودة صناعية عالية, مخرج الديزة 1.5مم",
     reviews: [
       {
@@ -512,8 +516,8 @@ const products = [
     productName: "فرد بوية",
     imgUrl: sprayer3,
     category: "بوية/دهان",
-    price: 50,
-    oldPrice: 90,
+    price: 60,
+    oldPrice: 100,
     shortDesc: "فرد بوية ذات جودة صناعية عالية, مخرج الديزة 1.8مم",
     reviews: [
       {
@@ -558,7 +562,8 @@ const products = [
     productName: "فلتر ماء",
     imgUrl: pressureguage2,
     category: "فلتر",
-    price: 65,
+    price: 70,
+    oldPrice: 85,
     shortDesc: "فلتر ماء ذات جودة صناعية عالية",
     reviews: [
       {
@@ -603,8 +608,8 @@ const products = [
     productName: "مزيتة حديد",
     imgUrl: oilssprayer,
     category: "مزيتة",
-    price: 15,
-    oldPrice: 35,
+    price: 20,
+    oldPrice: 40,
     shortDesc: "مزيتة حديد ذات جودة صناعية عالية",
     reviews: [
       {
@@ -984,6 +989,39 @@ const products = [
     avgRating: 4.5,
   },
   {
+    id: "110",
+    productName: "جيتور ماء 90 بار",
+    imgUrl: a90bar,
+    category: "جيتور ماء",
+    price: 400,
+    oldPrice: 500,
+    shortDesc:
+      "جيتور ماء منزلي بقوة قصوى 13 ميجا بكسل و 1500 واط، مع كامل القطع و فرد و بربيش",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.5,
+  },
+  {
+    id: "111",
+    productName: "جيتور ماء صناعي 150 بار",
+    imgUrl: a150bar,
+    category: "جيتور ماء",
+    price: 2000,
+    oldPrice: 2500,
+    shortDesc: "جيتور ماء صناعي بقوة 150 بار مع كامل القطع و فرد و بربيش",
+    reviews: [
+      {
+        rating: 4.7,
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      },
+    ],
+    avgRating: 4.5,
+  },
+  {
     id: "56",
     productName: "فرد جيتور",
     imgUrl: washer2hand,
@@ -1000,7 +1038,7 @@ const products = [
   },
   {
     id: "57",
-    productName: "فرد جيتور",
+    productName: "فرد جيتور 70سم",
     imgUrl: washerhand,
     category: "جيتور ماء",
     price: 140,
@@ -1015,7 +1053,7 @@ const products = [
   },
   {
     id: "58",
-    productName: "فرد جيتور",
+    productName: "فرد جيتور 90سم",
     imgUrl: washerhand,
     category: "جيتور ماء",
     price: 170,
@@ -1248,8 +1286,8 @@ const products = [
     productName: "CO2 ماكنة لحام 250 أمبير",
     imgUrl: welding250,
     category: "ماكنة صناعية",
-    price: 3300,
-    oldPrice: 3400,
+    price: 3500,
+    oldPrice: 3700,
     shortDesc: "ف 220 فولت ذات جودة صناعية عاليةCO2 ماكنة لحام 250 أمبير",
     reviews: [
       {
@@ -1264,7 +1302,7 @@ const products = [
     productName: "CO2 ماكنة لحام 270 أمبير",
     imgUrl: welding270,
     category: "ماكنة صناعية",
-    price: 3600,
+    price: 3800,
     shortDesc: "ف 380 فولت 3 فاز ذات جودة صناعية عاليةCO2 ماكنة لحام 270 أمبير",
     reviews: [
       {
@@ -1452,8 +1490,8 @@ const products = [
     productName: "ماكنة بناشر 22 انش",
     imgUrl: changer,
     category: "ماكنة صناعية",
-    price: 5000,
-    oldPrice: 5900,
+    price: 5900,
+    oldPrice: 6500,
     shortDesc: "ماكنة بناشرفل اتوماتيك بمقاس 22 انش , تحتاج هواء  من 8 -10 بار",
     reviews: [
       {
@@ -1468,7 +1506,8 @@ const products = [
     productName: "ماكنة بلنص عجلات",
     imgUrl: balancer,
     category: "ماكنة صناعية",
-    price: 4500,
+    price: 5500,
+    oldPrice: 6100,
     shortDesc:
       "ماكنة بلنص(ترصيص) العجلات  تحتوي على شاشة , بمقاس 24 انش , 1 فاز, 220 فولت ,ماكنة ذات جودة صناعية عالية",
     reviews: [
@@ -1596,8 +1635,8 @@ const products = [
     productName: "جك ركيزة",
     imgUrl: jackstand2,
     category: "جك",
-    price: 100,
-    oldPrice: 150,
+    price: 130,
+    oldPrice: 170,
     shortDesc: "طقم جك ستاند صناعي 3طن , جودة صناعية عالية ",
     reviews: [
       {
