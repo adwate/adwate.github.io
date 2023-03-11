@@ -1,8 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
 import "../styles/product-details.css";
-import { motion } from "framer-motion";
-
+import ReactGa from "react-ga";
 import { Container, Row, Col } from "reactstrap";
 import { useParams } from "react-router-dom";
 import Button from "react-bootstrap/Button";
@@ -82,6 +81,10 @@ const ProductDetails = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [product]);
+
+  useEffect(() => {
+    ReactGa.pageview(window.location.pathname);
+  }, [])
 
   return (
     <Helmet title={productName}>

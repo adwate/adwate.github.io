@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { cartActions } from "../redux/slices/cartSlice";
 import { useDispatch } from "react-redux";
+import ReactGa from "react-ga";
 
 import "../styles/checkout.css";
 import { Container, Row, Col, Form, FormGroup } from "reactstrap";
@@ -147,6 +148,10 @@ const Checkout = () => {
       console.log("errors", errors);
     }
   };
+
+  useEffect(() => {
+    ReactGa.pageview(window.location.pathname);
+  }, []);
 
   return (
     <Helmet title="إستكمال الطلب">
